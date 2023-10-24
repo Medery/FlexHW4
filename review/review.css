@@ -1,0 +1,64 @@
+.review__first-block, .review__second-block, .review__third-block {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.review__first-person, 
+.review__second-person, 
+.review__third-person 
+{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.review__text {
+    width: 50vw;
+    padding-top: 52px;
+}
+
+.review img {
+    width: 100%;
+}
+
+.review .image-wrapper {
+    margin-bottom: 11px;
+}
+
+.review h2 {
+    margin-bottom: 40px;
+}
+
+.review {
+    margin-bottom: 100px;
+}
+
+.review__first-person .image-wrapper,
+.review__second-person .image-wrapper,
+.review__third-person .image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.review__first-person img ,
+.review__second-person img,
+.review__third-person img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+}
+
+.review__first-person .image-wrapper::before,
+.review__second-person .image-wrapper::before,
+.review__third-person .image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle at center, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.80) 100%);
+    border-radius: 50%;
+    pointer-events: none; 
+}
